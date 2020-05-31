@@ -1,0 +1,55 @@
+{
+  "id": "8d1195a1-5f35-4672-8cd2-6377d11d383b",
+  "parentId": "fabeda6c-9e3f-4b27-9615-490097c7dd27",
+  "rootParentId": "fabeda6c-9e3f-4b27-9615-490097c7dd27",
+  "name": "Choisir ligne",
+  "auto": true,
+  "contexts": [
+    "Bonjour-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Bonjour.Bonjour-next",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "aaf9346a-d9bd-4dc5-ae4a-a90c3a450cb0",
+          "required": true,
+          "dataType": "@metro-line",
+          "name": "location",
+          "value": "$location",
+          "prompts": [
+            {
+              "lang": "fr",
+              "value": "Veuillez choisir une ligne"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "fr",
+          "condition": "",
+          "speech": "Oui"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
